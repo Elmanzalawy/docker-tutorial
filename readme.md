@@ -88,5 +88,3 @@
   ```bash
   kubectl create deployment nodeapplication --image=node
   ```
-
-test
