@@ -72,7 +72,7 @@
   docker service create --replicas <number of replicas> --name nodeserver1 <image> ping docker.com
   ```
 
------
+---
 
 ## Kubernetes Cluster
 
