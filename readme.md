@@ -30,7 +30,7 @@
   docker-compose build
   ```
 
-- ##### Run docker-compose containers
+- ##### Run all docker-compose containers
   ```bash
   docker-compose up
   ```
