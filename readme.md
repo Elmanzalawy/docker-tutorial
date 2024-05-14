@@ -15,14 +15,16 @@
   ```
 
 - ##### Create container
-    ```bash
-    docker run -p 3000:3000 algofields/frontend
-    ```
+
+  ```bash
+  docker run -p 3000:3000 algofields/frontend
+  ```
 
 - ##### List active containers
-    ```bash
-    docker ps
-    ```
+
+  ```bash
+  docker ps
+  ```
 
 - ##### Build docker-compose containers
 
@@ -45,6 +47,27 @@
   ```
 
 - ##### View container logs
+
   ```bash
   docker-compose logs <container-id>
+  ```
+
+- ##### Create swarm
+
+  ```bash
+  docker swarm init
+  ```
+
+- ##### Add worker to swarm
+
+  **NOTE** - This command requires to SSH into the machine that we want to add to the swarm.
+
+  ```bash
+  docker swarm join --token <token> 192.168.65.3:2377
+  ```
+
+- ##### Add a service to the sawrm
+
+  ```bash
+  docker service create --replicas <number of replicas> --name nodeserver1 <image> ping docker.com
   ```
