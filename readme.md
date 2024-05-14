@@ -1,4 +1,4 @@
-## Commands
+## Docker Commands
 
 [CLI Commands Reference](https://docs.docker.com/engine/reference/commandline/cli/)
 
@@ -70,4 +70,21 @@
 
   ```bash
   docker service create --replicas <number of replicas> --name nodeserver1 <image> ping docker.com
+  ```
+
+-----
+
+## Kubernetes Cluster
+
+[minikube commands reference](https://minikube.sigs.k8s.io/docs/start/)
+
+- ##### Start cluster
+
+  ```bash
+  minikube start
+  ```
+
+- ##### Deploy service to kubernetes cluster
+  ```bash
+  kubectl create deployment nodeapplication --image=node
   ```
